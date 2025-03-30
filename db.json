@@ -1,5 +1,22 @@
 {
-    "users": [],
-    "books": []
-  }
-  
+  "users": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe",
+      "email": "john@example.com",
+      "password": "123456"
+    },
+    {
+      "id": "f778",
+      "email": "SantaCLaus@test.com",
+      "password": "hooHooHoo"
+    },
+    {
+      "id": "4370",
+      "email": "roxy_shor@yahoo.com",
+      "password": "Test1223"
+    }
+  ],
+  "books": []
+}
