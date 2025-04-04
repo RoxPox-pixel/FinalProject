@@ -2,40 +2,69 @@ import { useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
 
+
 function MyProfile() {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
+  const [userId, setUserId] = useState(""); 
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
 
-      useEffect(() => {
-         const loggedUser = localStorage.getItem("user");
-
-      if (!loggedUser) {
-      alert("You must be logged in to see this page!");
-      navigate("/login");
-         } else {
-            setUser(JSON.parse(loggedUser));
-     }
-      }, []);
+  
 
 
+  useEffect(() => {
+    const existingUser = JSON.parse(localStorage.getItem("user"));
+    
+    if (!existingUser) {
+      navigate("/login"); 
+      return;
+    }
 
+    setUserId(existingUser.id); 
+    setFirstName(existingUser.firstName);
+    setLastName(existingUser.lastName);
+    setEmail(existingUser.email);
+  }, [navigate]);
 
-  if (!user) {
-    return <p>Loading...</p>;
+  
+  async function profileUpdate(e) {
+    e.preventDefault(); 
+
+    const updatedUser = {
+      firstName,
+      lastName,
+      email,
+      password,
+    };
+
+    // Send updated info to the backend
+    const response = await fetch(`http://localhost:5000/users/${userId}`, {
+      method: "PATCH",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(updatedUser),
+    });
+
+    // Check if update was successful
+    if (response.ok) {
+      alert("Profile updated!"); 
+      localStorage.setItem("user", JSON.stringify({ id: userId, ...updatedUser }));
+    } else {
+      alert("Error updating profile!");
+    }
   }
-
-       function Logout() {
-    localStorage.removeItem("user");
-    navigate("/login");
-                         }
 
   return (
     <div>
       <h2>My Profile</h2>
-      <p><strong>Email:</strong> {user.email}</p>
-      <p><strong>First Name:</strong> {user.firstName}</p>
-      <p><strong>Last Name:</strong> {user.lastName}</p>
-      <button onClick={Logout}>Logout</button>
+      <form onSubmit={profileUpdate}>
+        <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
+        <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
+        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+        <input type="password" placeholder="New Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <button type="submit">Update Profile</button>
+      </form>
     </div>
   );
 }

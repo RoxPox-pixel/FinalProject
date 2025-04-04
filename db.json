@@ -15,7 +15,9 @@
     {
       "id": "4370",
       "email": "roxy_shor@yahoo.com",
-      "password": "Test1223"
+      "password": "Testing1212",
+      "firstName": "Roxana",
+      "lastName": "Manolache"
     }
   ],
   "books": []
