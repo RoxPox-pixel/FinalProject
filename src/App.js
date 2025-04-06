@@ -5,7 +5,7 @@ import Register from "./pages/Register";
 import MainList from "./pages/MainList";
 import MyProfile from "./pages/MyProfile";
 import NavBar from "./components/NavBar";
-import AddBook from "./pages/AddBook";
+import AddBook from "./pages/AddBook";;
 
 
 function App() {
@@ -23,5 +23,8 @@ function App() {
     </Router>
   );
 }
+
+
+
 
 export default App;
