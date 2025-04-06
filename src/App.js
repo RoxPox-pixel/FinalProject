@@ -5,7 +5,8 @@ import Register from "./pages/Register";
 import MainList from "./pages/MainList";
 import MyProfile from "./pages/MyProfile";
 import NavBar from "./components/NavBar";
-import AddBook from "./pages/AddBook";;
+import AddBook from "./pages/AddBook";
+import EditBook from "./pages/EditBook";
 
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
         <Route path="/books" element={<MainList />} />
         <Route path="/profile" element={<MyProfile />} />
         <Route path="/add-book" element={<AddBook />} />
+        <Route path="/edit-book/:id" element={<EditBook />} />
       </Routes>
     </Router>
   );

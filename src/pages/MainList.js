@@ -1,35 +1,69 @@
-import { useEffect, useState } from "react";
+import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
-function MainList() {
+function BooksList() {
   const [books, setBooks] = useState([]);
 
-  useEffect(() => {
-  
+    useEffect(() => {
     fetch("http://localhost:5000/books")
-      .then((res) => res.json()) 
+      .then((response) => response.json()) 
       .then((data) => setBooks(data)) 
-      .catch(() => alert("Error retrieving books!")); 
+      .catch(() => alert("Error loading books")); 
   }, []);
 
-  return (
-    <div>
-      <h2>Book List</h2>
-      {books.length === 0 ? (
-        <p>No books yet.</p> 
-      ) : (
-        <ul>
-          {books.map((book) => (
-            <li key={book.id}>
-              <strong>{book.title}</strong> by {book.author} <br />
-              <em>Category:</em> {book.category} <br />
-              <em>Description:</em> {book.description}
-              <hr />
-            </li>
-          ))}
-        </ul>
-      )}
-    </div>
-  );
+
+  //Deleting it//
+
+  function handleDelete(id) {
+      const confirmDelete = window.confirm("Are you sure you want to delete this book?");
+    
+  
+    if (confirmDelete) {
+      fetch("http://localhost:5000/books/" + id, {
+        method: "DELETE", 
+      })
+        .then((response) => {
+          if (response.ok) {
+            setBooks(books.filter((book) => book.id !== id));
+            alert("Book deleted!");
+          } else {
+            alert("Failed to delete book");
+          }
+        })
+        .catch(() => alert("Error while deleting the book"));
+    }
+  }
+
+
+ 
+ let inventory;
+ if (books.length === 0) {
+   inventory = <p>No books available</p>;
+ } else {
+   
+  let bookItems = [];
+  for (let i =0; i< books.length; i++) {
+    let book = books[i];
+    bookItems.push(
+           <li key={book.id}>
+           <h3>{book.title}</h3>
+           <p>{book.author}</p>
+           <p>{book.category}</p>
+           <p>{book.description}</p>
+           <Link to={`/edit-book/${book.id}`}>Edit</Link>
+           <button onClick={() => handleDelete(book.id)}>Delete</button>
+         </li>
+         );
+  }
+  inventory = <ul>{bookItems}</ul>;
+}     
+
+ return (
+   <div>
+     <h2>Book List</h2>
+     {inventory}
+   </div>
+ );
 }
 
-export default MainList;
+export default BooksList;

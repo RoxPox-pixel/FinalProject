@@ -33,20 +33,20 @@ function MyProfile() {
     e.preventDefault(); 
 
     const updatedUser = {
-      firstName,
-      lastName,
-      email,
-      password,
+      firstName: firstName,
+      lastName: lastName,
+      email: email,
+      password: password,
     };
 
-    // Send updated info to the backend
+    
     const response = await fetch(`http://localhost:5000/users/${userId}`, {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(updatedUser),
     });
 
-    // Check if update was successful
+    
     if (response.ok) {
       alert("Profile updated!"); 
       localStorage.setItem("user", JSON.stringify({ id: userId, ...updatedUser }));
