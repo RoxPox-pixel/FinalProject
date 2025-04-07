@@ -1,9 +1,14 @@
 import { useState } from "react";
 
+
+
+
+
+
 function AddBook() {
   const [title, setTitle] = useState("");
   const [author, setAuthor] = useState("");
-  const [category, setCategory] = useState("feelings");
+  const [category, setCategory] = useState("Other");
   const [description, setDescription] = useState("");
 
   function handleSubmit(e) {
@@ -53,11 +58,8 @@ function AddBook() {
           onChange={(e) => setAuthor(e.target.value)}
           required
         />
-        <select
-          value={category}
-          onChange={(e) => setCategory(e.target.value)}
-          required
-        >
+        <select value={category}  onChange={(e) => setCategory(e.target.value)}>
+        
           <option value="">Select Category</option>
           <option value="Feelings">Feelings</option>
           <option value="Seasons">Seasons</option>

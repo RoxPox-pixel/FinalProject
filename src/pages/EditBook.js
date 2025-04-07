@@ -40,7 +40,14 @@ function EditBook() {
       .then((response) => {
         if (response.ok) {
           alert("Book updated!");
+
+          setTitle("");
+          setAuthor("");
+          setCategory("Other");
+          setDescription("");
+
           navigate("/books");
+          
         } else {
           alert("Failed to update book");
         }
