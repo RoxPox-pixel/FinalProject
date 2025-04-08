@@ -10,17 +10,17 @@ import EditBook from "./pages/EditBook";
 
 
 function App() {
-  return (
+    return (
     <Router>
       <NavBar />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/register" element={<Register />} />
-        <Route path="/books" element={<MainList />} />
-        <Route path="/profile" element={<MyProfile />} />
-        <Route path="/add-book" element={<AddBook />} />
-        <Route path="/edit-book/:id" element={<EditBook />} />
+        <Route path="/Login" element={<Login />} />
+        <Route path="/Register" element={<Register />} />
+        <Route path="/Books" element={<MainList />} />
+        <Route path="/MyProfile" element={<MyProfile />} />
+        <Route path="/Add-Book" element={<AddBook />} />
+        <Route path="/Edit-Book/:id" element={<EditBook />} />
       </Routes>
     </Router>
   );

@@ -25,7 +25,6 @@
       "password": "Enapiena"
     }
   ],
-
   "books": [
     {
       "id": "1",
@@ -169,6 +168,28 @@
       "ageGroup": "4-6 years",
       "recommendation": "A good read when starting mass kindergarden",
       "learnings": "Build courage and aknowledging feelings."
+    },
+    {
+      "id": "21c0",
+      "title": "Llama Llama Red Pajama",
+      "author": "Anna Dewdney",
+      "category": "Nature",
+      "description": "Llama Llama's tale of nighttime drama has charmed readers as a classic hardcover for a full decade.",
+      "coverImage": "https://libris.to/media/jacket/09274941_llama-llama-red-pajama.jpg",
+      "ageGroup": "2-4",
+      "recommendation": "Amazing to incporporate in your daily reading as to explain and exemplify the importance of routines for your child",
+      "learnings": "Learnign about routines."
+    },
+    {
+      "id": "3bc1",
+      "title": "Oh, The Places You'll Go!",
+      "author": "Dr. Seuss",
+      "category": "Feelings",
+      "description": "In this classic Seussian tale, the good doctor primes his readers against all the little mishaps and misadventures that can befall even the best of us - from bang-ups and hang-ups to lurches and slumps - encouraging us to take life in our stride!",
+      "coverImage": "https://libris.to/media/jacket/01001387_oh-the-places-you-ll-go.jpg",
+      "ageGroup": "5-8",
+      "recommendation": "An awesome ready to give courage and self esteem to your child",
+      "learnings": "Teaching kids that sky is the limit as long as their heart is in everything they do."
     }
   ]
 }

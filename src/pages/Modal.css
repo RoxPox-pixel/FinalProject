@@ -27,13 +27,18 @@
   }
   
   /* Close button styling */
-  button {
+  .modal-content button {
     padding: 10px 20px;
-    background: #da73b1;
+    background: #ee62e9;
     border: none;
-    color: rgb(29, 21, 26);
+    color: rgb(10, 9, 10);
     cursor: pointer;
     margin-top: 20px;
-    align-self: center; 
+    align-self: center;
+    border-radius: 5px;
   }
   
+  /* Additional hover styling for the modal button */
+  .modal-content button:hover {
+    background-color: #78dced;
+  }

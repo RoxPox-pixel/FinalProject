@@ -22,7 +22,7 @@ async function Register(e) {
 
     if (response.ok) {
       alert("Registered!");
-      navigate("/login");
+      navigate("/Home");
     } else {
       alert("Error!");
     }

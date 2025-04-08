@@ -82,7 +82,7 @@ p {
 button {
   padding: 10px 15px;
   border-radius: 5px;
-  color: white;
+  color: rgb(198, 61, 244);
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -158,4 +158,18 @@ button-container a {
   padding: 10px 16px;
   border-radius: 8px;
   cursor: pointer;
+}
+
+
+.logout-button {
+  padding: 10px 20px;
+  background-color: #ff5733;  /* Customize the color */
+  border: none;
+  color: white;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.logout-button:hover {
+  background-color: #e04e2f;  /* Hover effect */
 }

@@ -3,7 +3,9 @@ import { useNavigate } from "react-router-dom";
 
 
 
+
 function MyProfile() {
+  
   const navigate = useNavigate();
   const [userId, setUserId] = useState(""); 
   const [firstName, setFirstName] = useState("");
@@ -18,7 +20,7 @@ function MyProfile() {
     const existingUser = JSON.parse(localStorage.getItem("user"));
     
     if (!existingUser) {
-      navigate("/login"); 
+      navigate("/Login"); 
       return;
     }
 
@@ -28,7 +30,13 @@ function MyProfile() {
     setEmail(existingUser.email);
   }, [navigate]);
 
-  
+  const handleLogout = () => {
+    localStorage.removeItem("user"); 
+    window.dispatchEvent(new Event("storage"));
+    navigate("/"); 
+  };
+
+
   async function profileUpdate(e) {
     e.preventDefault(); 
 
@@ -59,12 +67,36 @@ function MyProfile() {
     <div>
       <h2>My Profile</h2>
       <form onSubmit={profileUpdate}>
-        <input type="text" placeholder="First Name" value={firstName} onChange={(e) => setFirstName(e.target.value)} />
-        <input type="text" placeholder="Last Name" value={lastName} onChange={(e) => setLastName(e.target.value)} />
-        <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
-        <input type="password" placeholder="New Password" value={password} onChange={(e) => setPassword(e.target.value)} />
+        <input
+          type="text"
+          placeholder="First Name"
+          value={firstName}
+          onChange={(e) => setFirstName(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Last Name"
+          value={lastName}
+          onChange={(e) => setLastName(e.target.value)}
+        />
+        <input
+          type="email"
+          placeholder="Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="New Password"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
         <button type="submit">Update Profile</button>
       </form>
+
+      <button onClick={handleLogout} className="logout-button">
+        Logout
+      </button>
     </div>
   );
 }

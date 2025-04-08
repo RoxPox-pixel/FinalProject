@@ -15,7 +15,8 @@ function Login() {
     if (users.length > 0) {
       localStorage.setItem("user", JSON.stringify(users[0])); // trying to store this //
       alert("Logged in!");
-      navigate("/profile");
+      window.dispatchEvent(new Event("storage"));
+      navigate("/");
     } else {
       alert("Wrong email or password!");
     }
