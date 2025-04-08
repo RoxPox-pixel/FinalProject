@@ -10,6 +10,12 @@ function AddBook() {
   const [author, setAuthor] = useState("");
   const [category, setCategory] = useState("Other");
   const [description, setDescription] = useState("");
+  const [coverImage, setCoverImage] = useState("");      
+  const [ageGroup, setAgeGroup] = useState("");            
+  const [recommendation, setRecommendation] = useState(""); 
+  const [learnings, setLearnings] = useState("");   
+
+
 
   function handleSubmit(e) {
     e.preventDefault();
@@ -19,6 +25,10 @@ function AddBook() {
       author: author,
       category: category,
       description: description,
+      coverImage: coverImage,
+      ageGroup: ageGroup,
+      recommendation: recommendation,
+      learnings: learnings,
     };
 
     fetch("http://localhost:5000/books", {
@@ -33,6 +43,11 @@ function AddBook() {
           setAuthor("");
           setCategory("");
           setDescription("");
+          setCoverImage("");
+          setAgeGroup("");
+          setRecommendation("");
+          setLearnings("");
+
         } else {
           alert("Failed to add book!");
         }
@@ -73,6 +88,31 @@ function AddBook() {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
         />
+        <input
+          type="text"
+          placeholder="Cover Image URL"
+          value={coverImage}
+          onChange={(e) => setCoverImage(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Age Group"
+          value={ageGroup}
+          onChange={(e) => setAgeGroup(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Recommendation"
+          value={recommendation}
+          onChange={(e) => setRecommendation(e.target.value)}
+        />
+        <input
+          type="text"
+          placeholder="Learnings"
+          value={learnings}
+          onChange={(e) => setLearnings(e.target.value)}
+        />
+      
         <button type="submit">Add Book</button>
       </form>
     </div>
