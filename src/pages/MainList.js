@@ -43,7 +43,7 @@ function BooksList() {
       let book = books[i];
       bookItems.push(
         <li key={book.id}>
-          <img src={book.coverImage || 'https://via.placeholder.com/200'} alt={book.title} />
+          <img src={book.coverImage || '/public/bookcovers/'} alt={book.title} />
           <h3>{book.title}</h3>
           <p>{book.author}</p>
           <p>{book.category}</p>

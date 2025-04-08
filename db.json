@@ -25,48 +25,106 @@
       "password": "Enapiena"
     }
   ],
+
   "books": [
     {
-      "id": "adc8",
+      "id": "1",
       "title": "Bees ",
       "author": " Piotr Socha",
       "category": "other",
-      "description": "One part science, one part cultural history, and countless parts fascination, Bees celebrates the important role that these intriguing insects have played in our ecosystem throughout the ages. From Athena to Alexander the Great and from Egypt to Ethiopia, Bees explores different methods of beekeeping and uncovers the debt that humans owe this vital species. With beautifully accessible illustrations depicting everything from bee anatomy to the essentials of honey making, readers will be captivated by the endless wonders of this seemingly small speck of the animal kingdom."
+      "description": "One part science, one part cultural history, and countless parts fascination, Bees celebrates the important role that these intriguing insects have played in our ecosystem throughout the ages...",
+      "coverImage": "/bookcovers/bees.jpg",
+      "ageGroup": "3-5",
+      "recommendation": "Perfect for bedtime.",
+      "learnings": "Understanding and naming feelings."
     },
     {
       "id": "ee74",
       "title": "Trees ",
       "author": "Piotr Socha, Wojciech Grajkowski",
       "category": "Nature",
-      "description": "Part botany, part history, part cultural anthropology--Trees goes beyond the basics to tell readers everything they might want to know about this particular branch of the plant kingdom. Trees explores the important roles trees play in our ecosystem, takes an up-close-and-personal look at the parts of trees (from roots to leaves), and unpacks the cultural impact of trees from classification systems (like family trees) to art forms (like bonsai trees). Looking forward, Trees also addresses the deforestation crisis. Heavily illustrated in the same style as Bees: A Honeyed History, Trees: A Rooted History serves as a beautifully packaged celebration of trees of all kinds."
+      "description": "Part botany, part history, part cultural anthropology--Trees goes beyond the basics...",
+      "coverImage": "/bookcovers/trees.jpg",
+      "ageGroup": "2-4",
+      "recommendation": "Perfect for bedtime.",
+      "learnings": "Building empathy and confidence."
     },
     {
       "id": "af77",
       "title": "Carl's Snowy Afternoon",
       "author": "Alexandra Day",
       "category": "Seasons",
-      "description": "When Madeleine's parents go to the Pond Party, they leave Carl--everyone' favorite Rottweiler--and the baby at home with a babysitter. But Carl and Madeleine have plans of their own--they want to play in the snow. After getting all bundled up, they sneak off to go sledding, build a snowman, and even try sliding on the ice at the pond."
+      "description": "Carl and Madeleine have plans of their own--they want to play in the snow...",
+      "coverImage": "/bookcovers/carl.jpg",
+      "ageGroup": "3-5",
+      "recommendation": "Great for curious minds.",
+      "learnings": "Exploring nature and the world around us."
     },
     {
       "id": "4799",
       "title": "Precious Moments: Little Book of Prayers",
       "author": "Jean Fischer",
       "category": "Feelings",
-      "description": "Inspire little ones to pray! Precious Moments: Little Book of Prayers is a colorful board book that teaches little ones, ages 2-4, prayers for thankfulness, praise, school, mealtime, and bedtime. Little boys and girls will cherish this addition to their library. Since 1978, Precious Moments has grown into a brand recognized worldwide, with more than 14.5 million books and Bibles sold with Thomas Nelson. Little Book of Prayers is a great gift: For baby showers, adoption parties, baptisms, Easter baskets, birthdays, or holiday gifting To serve as an age appropriate resource for little ones to discover prayers that will become lifetime favorites Families will enjoy the nostalgia of this treasured brand at storytime and bedtime."
+      "description": "Inspire little ones to pray! This colorful board book teaches little ones, ages 2-4, prayers for thankfulness, praise, school, mealtime, and bedtime...",
+      "coverImage": "/bookcovers/precious.jpg",
+      "ageGroup": "4-6",
+      "recommendation": "Wonderful for classroom storytelling.",
+      "learnings": "Understanding and naming feelings."
     },
     {
       "id": "4f01",
       "title": "Monsters at Christmas",
       "author": " Zanna Davidson",
       "category": "Seasons",
-      "description": "It's nearly Christmas and Billy and Ruby are feeling VERY excited. Billy has asked Santa to bring presents for his Mini Monsters and they're very excited too... until they try to help with the decorating and bring down the ENTIRE Christmas tree."
+      "description": "It's nearly Christmas and Billy and Ruby are feeling VERY excited...",
+      "coverImage": "/bookcovers/monsters.jpg",
+      "ageGroup": "4-6",
+      "recommendation": "Perfect for bedtime.",
+      "learnings": "Encouraging imagination and creativity."
     },
     {
       "id": "a15a",
       "title": "One Little Raindrop: Life Cycles",
       "author": "Lesley Sims",
       "category": "Nature",
-      "description": ""
+      "description": "",
+      "coverImage": "/bookcovers/snowdrop.jpg",
+      "ageGroup": "2-4",
+      "recommendation": "Best read together with a parent.",
+      "learnings": "Exploring nature and the world around us."
+    },
+    {
+      "id": "a719",
+      "title": "There’s a Bunny in Your Book",
+      "author": "Tom Fletcher",
+      "category": "Nature",
+      "description": "It's a fluffy bunny, and she's VERY hungry... but those carrots are not for bunnies!",
+      "coverImage": "/bookcovers/bunny.jpg",
+      "ageGroup": "5-7",
+      "recommendation": "Perfect for bedtime.",
+      "learnings": "Encouraging imagination and creativity."
+    },
+    {
+      "id": "2ae5",
+      "title": "Frida the Rock-and-Roll Moth",
+      "author": "Kim Hillyard , Kim Hillyard (Illustrator)",
+      "category": "Nature",
+      "description": "Frida is a musical moth who loves to rock out ­– but starts to doubt herself when others join in...",
+      "coverImage": "/bookcovers/Frida.jpg",
+      "ageGroup": "3-5",
+      "recommendation": "Great for curious minds.",
+      "learnings": "Building empathy and confidence."
+    },
+    {
+      "id": "b930",
+      "title": "Gretel the Wonder Mammoth",
+      "author": "Kim Hillyard , Kim Hillyard (Illustrator)",
+      "category": "Nature",
+      "description": "Gretel the last mammoth feels overwhelmed in her new life... a story of asking for help.",
+      "coverImage": "/bookcovers/greel.jpg",
+      "ageGroup": "4-6",
+      "recommendation": "Wonderful for classroom storytelling.",
+      "learnings": "Building empathy and confidence."
     }
   ]
 }

@@ -1,14 +1,13 @@
-
 .navbar {
     position: sticky;
     top: 0;
     z-index: 1000;
-    width: 100%;
+    width: 98%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #fce4ec;
-    padding: 10px 20px;
+    padding: 10px 10px 
   }
   
   .logo {
@@ -22,20 +21,22 @@
     list-style: none;
     display: flex;
     gap: 15px;
+  
   }
   
   .nav-links li {
     display: inline;
+    
   }
   
   .nav-links a {
     text-decoration: none;
     color: #333;
-    font-size: 18px;
+    font-size: 15px;
   }
   
   .nav-links a:hover {
-    color: #ff5722;
+    background-color: #ff22bde2;
   }
   
   /* Mobile Friendly: Stack the links */
