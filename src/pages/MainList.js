@@ -18,7 +18,7 @@ function BooksList() {
 
   //Deleting it//
 
-  function handleDelete(id) {
+function handleDelete(id) {
       const confirmDelete = window.confirm("Are you sure you want to delete this book?");
     
   
@@ -39,8 +39,8 @@ function BooksList() {
   }
 
 
-
-  let inventory;
+const user = localStorage.getItem("user");
+let inventory;
   if (books.length === 0) {
     inventory = <p>No books available</p>;
   } else {
@@ -67,17 +67,18 @@ function BooksList() {
            <p>{book.category}</p>
            <p>{book.description}</p>
 
+
+           {user && (
            <div className="button-container">
             <Link to={`/edit-book/${book.id}`}>
             <button className="edit">Edit</button></Link>
-            <button 
-            className="delete" 
-            onClick={(e) => {
+            <button className="delete" onClick={(e) => {
                e.stopPropagation(); 
                handleDelete(book.id); }}>
                 Delete
                 </button> 
            </div>
+           )}
          </li>
       );
     }

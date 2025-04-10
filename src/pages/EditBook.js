@@ -10,6 +10,16 @@ function EditBook() {
   const { id } = useParams();
   const navigate = useNavigate();
 
+
+  useEffect(() => {
+    const user = localStorage.getItem("user");
+    if (!user) {
+      alert("You must be logged in to edit a book.");
+      navigate("/Login");
+    }
+  }, [navigate]);
+
+
   useEffect(() => {
     fetch(`http://localhost:5000/books/${id}`)
       .then((response) => response.json())
@@ -22,7 +32,7 @@ function EditBook() {
       .catch(() => alert("Failed to load book data"));
   }, [id]);
 
-  function handleSubmit(e) {
+  function handleEdit(e) {
     e.preventDefault();
 
     const updatedBook = {
@@ -58,7 +68,7 @@ function EditBook() {
   return (
     <div>
       <h2>Edit Book</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleEdit}>
         <input
           type="text"
           placeholder="Title"
@@ -78,10 +88,11 @@ function EditBook() {
           onChange={(e) => setCategory(e.target.value)}
           required
         >
-          <option value="feelings">Feelings</option>
-          <option value="seasons">Seasons</option>
-          <option value="holidays">Holidays</option>
-          <option value="other">Other</option>
+          <option value="Feelings">Feelings</option>
+          <option value="Seasons">Seasons</option>
+          <option value="Holidays">Holidays</option>
+          <option value="Nature">Nature</option>
+          <option value="Other">Other</option>
         </select>
         <input
           type="text"
