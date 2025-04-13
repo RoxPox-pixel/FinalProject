@@ -14,19 +14,20 @@
   
   /* Modal Content */
   .modal-content {
-    background: white;
+    background:  #fff8f0;
     padding: 20px;
     border-radius: 8px;
     max-width: 600px;
     width: 100%;
     position: relative;
-    max-height: 80vh; 
+    max-height: 500px; 
     overflow-y: auto;
     display: flex;
+    text-align: left;
     flex-direction: column;
   }
   
-  /* Close button styling */
+
   .modal-content button {
     padding: 10px 20px;
     background: #ee62e9;
@@ -38,7 +39,7 @@
     border-radius: 5px;
   }
   
-  /* Additional hover styling for the modal button */
+
   .modal-content button:hover {
     background-color: #78dced;
   }

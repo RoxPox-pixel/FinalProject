@@ -91,12 +91,10 @@ function MyProfile() {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
         />
-        <button type="submit">Update Profile</button>
+        <button type="submit" className="btn">Update Profile</button>
       </form>
 
-      <button onClick={handleLogout} className="logout-button">
-        Logout
-      </button>
+      <button onClick={handleLogout} className="logout-button">Logout</button>
     </div>
   );
 }

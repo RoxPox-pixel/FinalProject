@@ -190,6 +190,83 @@
       "ageGroup": "5-8",
       "recommendation": "An awesome ready to give courage and self esteem to your child",
       "learnings": "Teaching kids that sky is the limit as long as their heart is in everything they do."
+    },
+    {
+      "id": "c94e",
+      "title": "You're My Little Blessing",
+      "author": "Nicola Edwards",
+      "category": "Feelings",
+      "description": "Celebrate God’s gift of your little one in this adorable rhyming and inspirational board book, full of sweet illustrations, shaped cut-outs, and raised elements!",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9781667208398_p0_v3_s600x595.jpg",
+      "ageGroup": "0-2",
+      "recommendation": "Perfect for cuddling up with your little one, these sweet rhyming stories celebrate a parent’s love for their child.",
+      "learnings": "Celebrate your little blessing with this sweet and colorful rhyming board book all about the love a parent has for their precious gift from God"
+    },
+    {
+      "id": "f11b",
+      "title": "That's not my lamb...",
+      "author": "Fiona Watt",
+      "category": "",
+      "description": "Meet five adorable little lambs in this charming addition to the much-loved That's not my... series.",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9781805078333_p0_v1_s600x595.jpg",
+      "ageGroup": "0-2",
+      "recommendation": "A perfect first Easter gift for babies and toddlers.",
+      "learnings": "Babies love the best-selling That's not my... books with their bold illustrations, patches to stroke, and a mouse to spot on every page, all designed to develop sensory and language awareness."
+    },
+    {
+      "id": "028b",
+      "title": "Little Blue Truck's Springtime: An Easter And Springtime Book For Kids",
+      "author": "Alice Schertle",
+      "category": "Seasons",
+      "description": "Beep! Beep! Little Blue Truck is out for a ride with his good friend Toad. The sun is shining and the flowers are blooming—it's a beautiful spring day! Who will they see along the way?",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9780544938090_p0_v4_s600x595.jpg",
+      "ageGroup": "0-2",
+      "recommendation": "Perfect for teaching young mind about how we all were littel first !",
+      "learnings": "Open the flaps to meet all of the sweet baby animals just born on the farm. Peep! Peep!"
+    },
+    {
+      "id": "b32c",
+      "title": "Buffalo Fluffalo",
+      "author": " Bess Kalb",
+      "category": "Feelings",
+      "description": "Introducing a sweet and silly buffalo who tries to bluff and fluff his way into being bigger than he really is. This laugh-out-loud story by an Emmy-nominated comedy writer shows it’s okay to be yourself.",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9798217030651_p0_v9_s600x595.jpg",
+      "ageGroup": "3-5",
+      "recommendation": "Readers will find Buffalo Fluffalo’s insecurity endearing and will be moved to reassure him. This humorous and delightful book encourages self-acceptance with a lighthearted touch.",
+      "learnings": "Centering on the unique lead character Huffalo Buffalo, who also happens to be very fluffy, this is a story that will inspire kids and grownups to accept who they are."
+    },
+    {
+      "id": "767a",
+      "title": "Will the Pigeon Graduate?",
+      "author": " Mo Willems",
+      "category": "Other",
+      "description": "Con-grad-ulations, Pigeon! He did it — or did he? Join our favorite winged friend in this hilarious journey where The Pigeon scrambles to get his degree — or get totally schooled.",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9781454960447_p0_v1_s600x595.jpg",
+      "ageGroup": "3-5",
+      "recommendation": "The Pigeon had better graduate! He did the work! He paid attention to the little details! He overcame some BIG obstacles! The Pigeon’s got this . . . Or does he?  ",
+      "learnings": "Grab your caps, don your gowns, and raise your hands for The Pigeon’s biggest adventure yet "
+    },
+    {
+      "id": "ed4f",
+      "title": "The Humble Pie",
+      "author": "Jory John,",
+      "category": "Holidays",
+      "description": "The Humble Pie likes to give others the spotlight. Aw, shucks!—they deserve it!  But when he’s paired with his best friend, Jake the Cake, for a school project, he soon realizes that staying in the shadows isn’t always as sweet as pie",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9780063469730_p0_v2_s600x595.jpg",
+      "ageGroup": "",
+      "recommendation": "Readers of all ages will laugh along as their new pie pal discovers that letting your voice be heard always takes the cake!",
+      "learnings": "Learnign to overcome life obstacles!"
+    },
+    {
+      "id": "e5e6",
+      "title": "A Wolf Called Fire: A Voice of the Wilderness Novel",
+      "author": " Rosanne Parry",
+      "category": "Nature",
+      "description": "The stand-alone companion to Rosanne Parry’s New York Times bestseller A Wolf Called Wander tells the wilderness survival story of the wolf pup known as Warm and is illustrated in black and white throughout. This Voice of the Wilderness Novel features informational back matter, including a map.",
+      "coverImage": "https://prodimage.images-bn.com/pimages/9780063415133_p0_v2_s600x595.jpg",
+      "ageGroup": "6-9",
+      "recommendation": "It’s inspired by Wolf 8, a real Yellowstone wolf who was the smallest of his pack and constantly bullied by his bigger brothers.",
+      "learnings": "Menotring ang guiding with patience"
     }
   ]
 }

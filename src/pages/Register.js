@@ -37,7 +37,7 @@ async function Register(e) {
       <form onSubmit={Register}>
         <input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
         <input type="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        <button type="submit">Register</button>
+        <button type="submit" className='btn'>Register</button>
       </form>
     </div>
   );

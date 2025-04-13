@@ -113,7 +113,7 @@ function AddBook() {
           onChange={(e) => setLearnings(e.target.value)}
         />
       
-        <button type="submit">Add Book</button>
+        <button type="submit" className='btn'>Add Book</button>
       </form>
     </div>
   );

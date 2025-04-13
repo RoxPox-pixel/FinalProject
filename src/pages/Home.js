@@ -1,7 +1,7 @@
 function Home() {
   return (
     <section className="homepage-info">
-      <h1>📚 Welcome to Little Readers!</h1>
+      <h1>📚 Welcome to Little Readers book inspirations !</h1>
 
       <p>
         Step into a world of stories made just for curious little minds! Whether it's bedtime, playtime, or cuddle time,
@@ -11,6 +11,8 @@ function Home() {
       <p>
         Our collection is filled with tales that spark imagination, teach valuable lessons, and bring big smiles.
         From adventures and giggles to gentle life lessons, there’s something special for every child.
+        WOndering what should i read my kid tonight? Hmmm tough decision !
+        Browse our books and click on the title to discover if this is a good next read for your little one !
       </p>
 
       <h2>✨ What You’ll Find:</h2>
